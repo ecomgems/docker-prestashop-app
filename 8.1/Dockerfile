@@ -1,4 +1,4 @@
-FROM webdevops/php-nginx-dev:7.4
+FROM webdevops/php-nginx-dev:8.1
 
 MAINTAINER Igor Goltsov <igor@ecomgems.com>
 

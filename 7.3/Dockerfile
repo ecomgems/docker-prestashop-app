@@ -5,8 +5,6 @@ MAINTAINER Igor Goltsov <igor@ecomgems.com>
 ENV WEB_DOCUMENT_ROOT=/phpapp
 RUN sed -i 's/user www-data;/user application;/g' /etc/nginx/nginx.conf
 RUN set -x \
-    && pecl uninstall xdebug \
-    && pecl install -f xdebug-2.9.8 \
     && apt update \
     && apt install --assume-yes pv unzip htop mc lsof default-mysql-client nodejs npm \
     && docker-image-cleanup
